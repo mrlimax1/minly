@@ -1,0 +1,46 @@
+@import "../../../styles/variables.sass"
+.input
+	display: flex
+	align-items: center
+
+	width: 454px
+	height: 100px
+
+	background: $accent_gradient
+	border-radius: $border-radius
+	color: #ffffff
+
+	cursor: text
+	&__field
+		width: 317px
+		margin-left: 18px
+
+		border: none
+		background: none
+		color: #ffffff
+
+		font-size: 20px
+		&::placeholder
+			color: #fff
+			opacity: .85
+		&:focus
+			outline: none
+	&__arrow
+		width: 34px
+		height: 34px
+		margin-left: 18px
+
+@media only screen and (max-width: 770px)
+	.input
+		width: 306px
+		&__field
+			width: 218px
+			font-size: 16px
+@media only screen and (max-width: 330px)
+	.input
+		width: 242px
+		height: 84px
+		&__field
+			width: 165px
+			margin-left: 10px
+			font-size: 14px

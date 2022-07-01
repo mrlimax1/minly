@@ -1,0 +1,45 @@
+@import "../../../styles/variables.sass"
+.button_accent
+	cursor: pointer
+
+	display: flex
+	justify-content: center
+	align-items: center
+
+	border: 1px	rgba(119, 119, 119, 0.1) solid
+	border-radius: $border-radius
+
+	font-size: 16px
+	font-weight: 600
+	line-height: 100%
+	text-decoration: none
+
+	color: #ffffff
+	background: #121212
+
+	width: 210px
+	height: 46px
+	margin: 0 6px 0 0
+
+	transition: all .3s
+
+	&:hover
+		color: #000
+		background: #fff
+
+@media only screen and (max-width: 770px)
+	.button_accent
+		font-size: 14px
+
+		width: 174px
+		height: 40px
+
+		margin: 5px 0 0
+@media only screen and (max-width: 330px)
+	.button_accent
+		font-size: 12px
+
+		width: 157px
+		height: 37px
+
+		margin: 6px 0 0

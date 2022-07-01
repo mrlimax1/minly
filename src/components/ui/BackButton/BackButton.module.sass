@@ -1,0 +1,36 @@
+@import "../../../styles/variables.sass"
+
+.back_button
+	display: flex
+	justify-content: center
+	align-items: center
+
+	margin: 40px auto
+	width: 352px
+	height: 70px
+
+	border: none
+	background: $accent
+	border-radius: 20px
+
+	font-weight: 600
+	font-size: 20px
+	line-height: 24px
+	color: #FFFFFF
+
+	cursor: pointer
+	transition: all .2s
+	&:hover
+		background: darken($accent, 5)
+@media only screen and (max-width: 770px)
+	.back_button
+		width: 325px
+		margin: 0
+		bottom: -25px
+		position: relative
+@media only screen and (max-width: 330px)
+	.back_button
+		width: 274px
+		margin: 0
+		bottom: -10px
+		font-size: 16px

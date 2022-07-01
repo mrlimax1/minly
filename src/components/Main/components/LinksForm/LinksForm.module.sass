@@ -1,0 +1,67 @@
+@import "../../../../styles/variables.sass"
+.links_form__wrapper
+	width: 100%
+	height: 172px
+
+	display: flex
+	justify-content: center
+	align-items: center
+
+	border-radius: $border-radius
+	background: $background-color
+
+	margin-top: 62px
+	&_button
+		cursor: pointer
+		margin-left: 20px
+		width: 205px
+		height: 100px
+
+		background: #121212
+		color: #fff
+
+		border-radius: $border-radius
+		border: none
+		transition: background .3s, color .3s
+
+		line-height: 100%
+		font-weight: 600
+		font-size: 22px
+		text-align: left
+		padding-left: 30px
+
+		&:hover
+			color: #000
+			background: #fff
+
+@media only screen and (max-width: 770px)
+	.links_form__wrapper
+		height: 242px
+		flex-direction: column
+
+		margin-top: 40px
+
+		&_button
+			width: 306px
+
+			padding: 0
+			margin: 10px 0 0
+
+			font-size: 18px
+			text-align: center
+@media only screen and (max-width: 330px)
+	.links_form__wrapper
+		height: 204px
+		flex-direction: column
+
+		margin-top: 33px
+
+		&_button
+			width: 242px
+			height: 84px
+
+			padding: 0
+			margin: 6px 0 0
+
+			font-size: 16px
+			text-align: center

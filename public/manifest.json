@@ -1,0 +1,9 @@
+{
+  "short_name": "Сокращалка",
+  "name": "Сокращалка",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#5DC4FF",
+  "background_color": "#ffffff"
+}

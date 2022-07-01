@@ -1,0 +1,59 @@
+@import '../../../styles/variables.sass'
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+    &__logo_container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 285px
+
+        font-weight: 700
+        font-size: 25px
+        text-transform: uppercase
+        color: $accent
+    &__logo
+        width: 65px
+        height: 65px
+    &__github_container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 105px
+
+        font-weight: 600
+        font-size: 21px
+        text-decoration-line: underline
+        color: $black
+        opacity: .8
+        transition: opacity .3s
+        &:hover
+            opacity: 1
+    &__github
+        width: 26px
+        height: 26px
+
+@media only screen and (max-width: 770px)
+    .header
+        &__logo_container
+            font-size: 20px
+            width: 200px
+        &__logo
+            width: 35px
+            height: 35px
+@media only screen and (max-width: 330px)
+    .header
+        &__logo_container
+            font-size: 16px
+            width: 167px
+        &__logo
+            width: 34px
+            height: 34px
+
+        &__github_container
+            font-size: 16px
+            width: 87px

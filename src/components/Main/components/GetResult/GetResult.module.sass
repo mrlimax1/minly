@@ -1,0 +1,167 @@
+@import "../../../../styles/variables.sass"
+
+
+.get_result
+	display: grid
+	grid-template-columns: repeat(5, 1fr)
+	grid-template-rows: repeat(5, 1fr)
+
+	color: $black
+	font-weight: 600
+	font-size: 20px
+	line-height: 24px
+
+	width: 100%
+	height: 330px
+	&__buttons
+		display: flex
+		justify-content: space-between
+		width: 435px
+		grid-area: 3 / 3 / 4 / 4
+
+
+	&__result
+		margin: 0 0 9px
+		&_propmt
+			margin: 0
+			font-size: 14px
+			opacity: .8
+		&_res
+			color: #000000
+
+			transition: all .3s
+			text-decoration: none
+			&:hover
+				color: $black
+			&:active
+				color: $black
+		&_wrapper
+			grid-area: 2 / 3 / 3 / 4
+			margin-top: 25px
+			margin-bottom: 40px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+
+	&__qr
+		max-height: 114px
+		max-width: 114px
+		&_container
+			grid-area: 2 / 2 / 4 / 3
+			margin-top: 20px
+
+		border-radius: $border-radius
+		padding: 18px
+
+		background: #ffffff
+		margin: 0 11px 0 0
+
+	&__initial_link
+		grid-area: 1 / 2 / 2 / 4
+
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+
+		color: #363853
+		margin: 68px 0 0
+
+		&_wrapper
+			color: #363853
+			text-decoration: underline
+			opacity: .8
+
+			transition: all .2s
+			&:hover
+				opacity: 0.6
+			&:active
+				color: #363853
+
+	&_wrapper
+		display: flex
+		align-items: center
+		justify-content: center
+
+		width: 100%
+		height: 330px
+
+		background: $background-color
+		border-radius: $border-radius
+		margin-top: 62px
+
+@media only screen and (max-width: 770px)
+	.get_result
+		height: 267px
+		font-size: 16px
+		&_wrapper
+			margin-top: 40px
+			height: 267px
+		&_container
+			height: 100px
+		&__buttons
+			grid-area: 2 / 3 / 4 / 4
+			flex-direction: column
+
+			width: 188px
+			height: 100px
+		&__qr
+			max-height: 76px
+			max-width: 76px
+			padding: 12px
+
+			&_container
+				margin: 0 0 0 7px
+				grid-area: 2 / 2 / 4 / 3
+				height: 100px
+		&__result
+			margin: 20px 0 0
+
+			&_prompt
+				font-size: 14px
+				margin: 0
+
+			&_wrapper
+				grid-area: 4 / 2 / 5 / 4
+				margin: 0 0 0 7px
+
+		&__initial_link
+			grid-area: 1 / 2 / 2 / 4
+
+			font-size: 16px
+			line-height: 20px
+
+			width: 183px
+
+			margin: 20px 0 20px 7px
+
+@media all and (min--moz-device-pixel-ratio: 0) and (max-width: 770px)
+	.get_result__result
+		margin: 40px 0 0
+@media only screen and (max-width: 330px)
+	.get_result
+		height: 214px
+		font-size: 14px
+		&_wrapper
+			margin-top: 33px
+		&__buttons
+			height: 90px
+			width: 160px
+		&__qr
+			padding: 11px
+			max-width: 68px
+			max-height: 68px
+
+			margin-right: 8px
+
+		&__result
+			margin: -8px 0 0
+			&_prompt
+				font-size: 12px
+		&__initial_link
+			font-size: 14px
+			margin: 0px 0 14px 10px
+
+@media all and (min--moz-device-pixel-ratio: 0) and (max-width: 330px)
+	.get_result__result
+		margin: 73px 0 0
+

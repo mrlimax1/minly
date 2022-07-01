@@ -1,0 +1,33 @@
+@import '~normalize.css'
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap')
+
+body
+  position: relative
+  background: #fff
+.container
+  display: flex
+  flex-direction: column
+
+  max-width: 768px
+  margin: 40px auto 0
+
+body, input, button, a
+  font-family: 'Montserrat', sans-serif
+
+
+@media only screen and (max-width: 770px)
+  .container
+    max-width: 325px
+    height: 100vh
+    margin: 15px auto 0
+
+  .promptText
+    &_help
+      width: 222px
+    &_history
+      width: 137px
+@media only screen and (max-width: 330px)
+  .container
+    max-width: 274px
+    height: 100vh
+    margin: 15px auto 0
